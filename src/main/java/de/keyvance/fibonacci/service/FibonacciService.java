@@ -8,5 +8,5 @@ import java.util.List;
  * @author torsten
  */
 public interface FibonacciService {
-    List<BigInteger> berechneFibonaccis();
+    List<BigInteger> berechneFibonaccis(int anzahl);
 }

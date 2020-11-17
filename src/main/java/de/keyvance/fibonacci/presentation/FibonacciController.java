@@ -20,7 +20,7 @@ public class FibonacciController {
         Response response = new Response();
         
         response.setStatus(0);
-        response.setFibonaccis(fibonacciService.berechneFibonaccis());
+        response.setFibonaccis(fibonacciService.berechneFibonaccis(100));
 
         return response;
     }
