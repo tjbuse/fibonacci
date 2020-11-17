@@ -7,7 +7,7 @@ import java.util.List;
  *
  * @author torsten
  */
-public class Response {
+public class FibonacciResponse {
     private List<BigInteger> fibonaccis;
     private int status;
     
