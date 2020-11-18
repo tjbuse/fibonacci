@@ -9,4 +9,5 @@ import java.util.List;
  */
 public interface FibonacciService {
     List<BigInteger> berechneFibonaccis(int anzahl);
+    List<BigInteger> naechsteFibonacci(BigInteger suchNummer, int anzahlFibonaccis);
 }

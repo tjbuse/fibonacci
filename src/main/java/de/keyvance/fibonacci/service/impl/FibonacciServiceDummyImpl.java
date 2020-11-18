@@ -4,6 +4,7 @@ import de.keyvance.fibonacci.service.FibonacciService;
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
 /**
@@ -11,6 +12,7 @@ import org.springframework.stereotype.Service;
  * @author torsten
  */
 @Service
+@Primary
 public class FibonacciServiceDummyImpl implements FibonacciService {
     
     @Override
@@ -28,4 +30,13 @@ public class FibonacciServiceDummyImpl implements FibonacciService {
 
         return numbers;
     }    
+
+    @Override
+    public List<BigInteger> naechsteFibonacci(BigInteger suchNummer, int anzahl) {
+        List<BigInteger> numbers = new ArrayList<>();
+        
+        numbers.add(suchNummer.add(BigInteger.ONE));
+
+        return numbers;
+    }
 }

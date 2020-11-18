@@ -12,7 +12,6 @@ import org.springframework.stereotype.Service;
  * @author torsten
  */
 @Service
-@Primary
 public class FibonacciServiceImpl implements FibonacciService {
 
     @Override
@@ -22,7 +21,7 @@ public class FibonacciServiceImpl implements FibonacciService {
         BigInteger t2 = BigInteger.ONE;
         
         for (int i = 1; i <= anzahl; ++i) {
-            System.out.print(t1 + " + ");
+            System.out.println(t1 + " + ");
             numbers.add(t1);
             BigInteger sum = t1.add(t2);
             t1 = t2;
@@ -31,4 +30,9 @@ public class FibonacciServiceImpl implements FibonacciService {
 
         return numbers;
     }    
+
+    @Override
+    public List<BigInteger> naechsteFibonacci(BigInteger suchNummer, int anzahl) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
 }

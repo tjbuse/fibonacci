@@ -9,7 +9,8 @@ import java.util.List;
  */
 public class FibonacciResponse {
     private List<BigInteger> fibonaccis;
-    private int status;
+    private int status = 0;
+    private String message = "";
     
     public List<BigInteger> getFibonaccis() {
         return fibonaccis;
@@ -25,6 +26,14 @@ public class FibonacciResponse {
 
     public void setStatus(int status) {
         this.status = status;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String errormessage) {
+        this.message = errormessage;
     }
     
 }
